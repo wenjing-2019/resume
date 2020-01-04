@@ -136,11 +136,6 @@ hr {
 		
 	</body>
 <script>
-window.onload = function(){
-	var imgList = document.getElementsByTagName('img');
-	for(var i=0;i<imgList.length;i++){
-		imgList[0].oncontextmenu = function(){return false;}
-	}
-}
+document.body.oncontextmenu = function(){return false;}
 </script>
 </html>
