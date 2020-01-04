@@ -91,7 +91,7 @@ hr {
 </head>
 	
 
-	<body>
+	<body >
 		<img src="./images/作品集0104.001.jpg" alt="文婧作品集"/>
 		<img src="./images/作品集0104.002.jpg" alt="文婧作品集"/>
 		<img src="./images/作品集0104.003.jpg" alt="文婧作品集"/>
@@ -135,5 +135,12 @@ hr {
 		
 		
 	</body>
-
+<script>
+window.onload = function(){
+	var imgList = document.getElementsByTagName('img');
+	for(var i=0;i<imgList.length;i++){
+		imgList[0].oncontextmenu = function(){return false;}
+	}
+}
+</script>
 </html>
